@@ -13,7 +13,7 @@ export const CSSReset = createGlobalStyle`
   }
 
   body, html{
-    width: 100%;
+  overflow: hidden;
   }
 
 
