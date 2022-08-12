@@ -9,11 +9,11 @@ export const CSSReset = createGlobalStyle`
   }
 
   img{
-    //width: 100%;
+    width: 100%;
   }
 
   body, html{
-  overflow-x: hidden;
+    overflow-x: hidden;
   }
 
 
