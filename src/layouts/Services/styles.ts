@@ -2,12 +2,14 @@ import styled from 'styled-components'
 
 export const ServicesContainer = styled.section`
   padding: 96px 72px;
+
+  @media only screen and (max-width: 667px) and (min-width: 320px) {
+    padding: 20px;
+  }
 `
 
 export const ServicesWrapper = styled.div`
-  margin: 0 auto;
   width: 100%;
-  max-width: 1140px;
 
   header {
     margin-bottom: 48px;
@@ -34,6 +36,7 @@ export const ServicesCardContainer = styled.div`
   gap: 1rem;
 
   @media only screen and (max-width: 667px) and (min-width: 320px) {
+    width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
 `

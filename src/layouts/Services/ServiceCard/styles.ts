@@ -2,8 +2,6 @@ import Image from 'next/image'
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  max-width: 357px;
-  min-height: 324px;
   background-color: ${({ theme }) => theme.colors['gray-100']};
 `
 

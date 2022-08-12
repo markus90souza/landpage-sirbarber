@@ -6,13 +6,15 @@ export const HeaderContainer = styled.header`
   background-color: ${({ theme }) => theme.colors['black-700']};
 `
 export const HeaderWrapper = styled.div`
-  width: 100%;
-  max-width: 1140px;
+  max-width: 1120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 0;
   margin: 0 auto;
+  @media only screen and (max-width: 667px) and (min-width: 320px) {
+    padding: 20px;
+  }
 `
 export const Brand = styled(Image)``
 

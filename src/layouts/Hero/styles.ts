@@ -2,17 +2,19 @@ import Image from 'next/image'
 import styled from 'styled-components'
 
 export const HeroContainer = styled.section`
+  width: 100%;
   background-color: ${({ theme }) => theme.colors['black-700']};
 `
 
 export const HeroWrapper = styled.div`
   display: flex;
-  max-width: 1140px;
+  max-width: 1120px;
   margin: 0 auto;
   gap: 1rem;
 
   @media only screen and (max-width: 667px) and (min-width: 320px) {
     flex-direction: column;
+    padding: 20px;
   }
 `
 

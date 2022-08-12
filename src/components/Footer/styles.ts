@@ -8,12 +8,20 @@ export const FooterContainer = styled.footer`
 `
 export const FooterWrapper = styled.div`
   width: 100%;
-  max-width: 1140px;
+  max-width: 1120px;
   margin: 0 auto;
   padding: 3rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media only screen and (max-width: 667px) and (min-width: 320px) {
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 `
 
 export const Brand = styled(Image)``
@@ -25,6 +33,12 @@ export const FooterBrandContainer = styled.div`
   gap: 12px;
   p {
     color: ${({ theme }) => theme.colors['gray-100']};
+  }
+
+  @media only screen and (max-width: 667px) and (min-width: 320px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `
 

@@ -12,6 +12,10 @@ export const CSSReset = createGlobalStyle`
     //width: 100%;
   }
 
+  body, html{
+    width: 100%;
+  }
+
 
 
 `
