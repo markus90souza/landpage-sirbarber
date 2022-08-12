@@ -13,7 +13,7 @@ export const CSSReset = createGlobalStyle`
   }
 
   body, html{
-  overflow: hidden;
+  overflow-x: hidden;
   }
 
 
