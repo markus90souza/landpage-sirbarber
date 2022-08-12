@@ -32,4 +32,8 @@ export const ServicesCardContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+
+  @media only screen and (max-width: 667px) and (min-width: 320px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `

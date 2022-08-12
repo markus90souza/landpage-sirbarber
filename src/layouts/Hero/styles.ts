@@ -6,15 +6,19 @@ export const HeroContainer = styled.section`
 `
 
 export const HeroWrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   max-width: 1140px;
   margin: 0 auto;
   gap: 1rem;
+
+  @media only screen and (max-width: 667px) and (min-width: 320px) {
+    flex-direction: column;
+  }
 `
 
 export const HeadlineContainer = styled.div`
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -52,11 +56,18 @@ export const WhatsappButton = styled.button`
 
 export const ImageContainer = styled.div`
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: flex-end;
 `
 
 export const Cover = styled(Image)`
+  /* width: 100%;
   max-width: 457px;
   max-height: 518px;
+
+  @media (max-width: 357px) {
+    width: 457px;
+    max-height: 518px;
+  } */
 `
