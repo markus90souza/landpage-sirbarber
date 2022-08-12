@@ -24,7 +24,7 @@ export function Hero() {
           </SubHeadline>
 
           <WhatsappButton>
-            <WhatsappLogo />
+            <WhatsappLogo size={20} />
             AGENDAR HORÁRIO
           </WhatsappButton>
         </HeadlineContainer>
